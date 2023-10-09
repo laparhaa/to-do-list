@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'poppins','sans-serif';
+    box-sizing: border-box;
+    /* background-color: #C84B31; */
+}
+#maincont{
+    /* position: relative; */
+    color: #2D4263;
+    background-color: #191919;
+    width: 100vw;
+    height: 1000vh;
+}
+
+#box1{
+    width: 100%;
+    max-width: 540px;
+    background:#ECDBBA;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+#box1 h2{
+    color:#2D4263;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    background:rgb(250, 250, 250);
+}
+input{
+    flex=1;
+    border: none;
+    outline: none;
+    background:#fafafa;
+    padding: 10px;
+    color: #191919;
+    font-weight: 14px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 20px 50px;
+    background: #C84B31;
+    color: #ECDBBA;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li{
+    color: #2D4263;
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content:'';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: #2D4263;
+    
+    background-size: cover;
+    background-position: center;
+    top:9px;
+    left: 10px;
+}
+ul li.checked{
+    color: #C84B31;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    /* ek image add kr dena check box ke liye */
+    background-color: green;
+    
+
+}
+
+ul li span{
+    position: absolute;
+    right: 0px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    border-radius: 50%;
+    color: #C84B31;
+    line-height: 30px;
+    text-align: center;
+}
+
+ul li span:hover{
+    color: #ECDBBA;
+    background-color: #C84B31;
+}
+
+
